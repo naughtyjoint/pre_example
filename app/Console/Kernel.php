@@ -29,15 +29,6 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
-        $schedule->call(function () {
-            $record = new DailyRecord();
-            $record->sign_id = 1;
-            $record->content = 'test';
-            $record->date = Carbon::today();
-            $record->save();
-        })->everyMinute()->when(function() {
-            return Cron::shouldIRun('test', 60);
-        });
     }
 
     /**
