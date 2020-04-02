@@ -70,8 +70,11 @@
             <br>
         @endforeach
     @elseif($sign)
-        @foreach($horoscopes as $item)
-            {!! $item->content !!}
+        {!! $horoscopes->content !!}
+        <br>
+        @foreach ($past_horo as $horo)
+            <p>{{ date('Y/m/d', strtotime($horo->date)) }}</p>
+            <p>{!! $horo->content !!}</p>
             <br>
         @endforeach
     @endif
