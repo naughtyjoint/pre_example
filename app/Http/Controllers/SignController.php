@@ -8,9 +8,9 @@ use Illuminate\Http\Request;
 class SignController extends Controller
 {
     //
-    public function show($id = null) {
-        if ($id) {
-            $sign = Sign::find($id);
+    public function show($number = null) {
+        if ($number !== null) {
+            $sign = Sign::where('number', $number)->first();
             $horoscopes = $sign->dailyRecords()->get();
             return view('astros', ['sign' => $sign, 'signs' => null, 'horoscopes' => $horoscopes]);
         } else {

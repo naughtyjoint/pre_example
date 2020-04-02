@@ -12,43 +12,43 @@
 </style>
 
 @section('content')
-    <a href="{{ route('home') }}">回首頁</a>
+    <a href="{{ url('/') }}">回首頁</a>
     <ul class="sign-list">
         <li>
-            <a href="{{ url('/astros/1') }}">牡羊座</a>
+            <a href="{{ url('/astros/0') }}">牡羊座</a>
         </li>
         <li>
-            <a href="{{ url('/astros/2') }}">金牛座</a>
+            <a href="{{ url('/astros/1') }}">金牛座</a>
         </li>
         <li>
-            <a href="{{ url('/astros/3') }}">雙子座</a>
+            <a href="{{ url('/astros/2') }}">雙子座</a>
         </li>
         <li>
-            <a href="{{ url('/astros/4') }}">巨蟹座</a>
+            <a href="{{ url('/astros/3') }}">巨蟹座</a>
         </li>
         <li>
-            <a href="{{ url('/astros/5') }}">獅子座</a>
+            <a href="{{ url('/astros/4') }}">獅子座</a>
         </li>
         <li>
-            <a href="{{ url('/astros/6') }}">處女座</a>
+            <a href="{{ url('/astros/5') }}">處女座</a>
         </li>
         <li>
-            <a href="{{ url('/astros/7') }}">天秤座</a>
+            <a href="{{ url('/astros/6') }}">天秤座</a>
         </li>
         <li>
-            <a href="{{ url('/astros/8') }}">天蠍座</a>
+            <a href="{{ url('/astros/7') }}">天蠍座</a>
         </li>
         <li>
-            <a href="{{ url('/astros/9') }}">射手座</a>
+            <a href="{{ url('/astros/8') }}">射手座</a>
         </li>
         <li>
-            <a href="{{ url('/astros/10') }}">摩羯座</a>
+            <a href="{{ url('/astros/9') }}">摩羯座</a>
         </li>
         <li>
-            <a href="{{ url('/astros/11') }}">水瓶座</a>
+            <a href="{{ url('/astros/10') }}">水瓶座</a>
         </li>
         <li>
-            <a href="{{ url('/astros/12') }}">雙魚座</a>
+            <a href="{{ url('/astros/11') }}">雙魚座</a>
         </li>
     </ul>
     <div style="clear: both;"></div>

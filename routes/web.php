@@ -21,4 +21,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/astros', 'SignController@show')->name('astros');
 
-Route::get('/astros/{id}', 'SignController@show');
+Route::get('/astros/{number}', 'SignController@show');
